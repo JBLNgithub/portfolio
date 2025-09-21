@@ -1,3 +1,4 @@
+- update tab picture
 - make responsive
     - about me
     - navbar
