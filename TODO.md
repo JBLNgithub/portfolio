@@ -1,0 +1,4 @@
+- make responsive
+    - about me
+    - navbar
+    - stockemoise
