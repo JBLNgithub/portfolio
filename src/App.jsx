@@ -1,5 +1,5 @@
 import React from 'react'
-import {Route, createBrowserRouter, createRoutesFromElements, RouterProvider} from 'react-router-dom'
+import {Route, createBrowserRouter, createRoutesFromElements, RouterProvider, Navigate} from 'react-router-dom'
 import HomePage from './pages/HomePage.jsx'
 import MainLayout from './layouts/MainLayout.jsx'
 import NotFoundPage from './pages/NotFoundPage.jsx'
@@ -14,9 +14,8 @@ const App = () => {
         <Route path='/stockemoise' element={<StockemoisePage />} />
         <Route path='/port-folio' element={<PortfolioPage />} />
 
-        {/*TODO this is specifically for gh-pages, make it a redirect link later*/}
-        <Route path='/portfolio' element={<HomePage />} />
-
+        {/*this is specifically for gh-pages*/}
+        <Route path='/portfolio' element={<Navigate to='/' replace />} />
 
         <Route path='/*' element={<NotFoundPage />} />
       </Route>
