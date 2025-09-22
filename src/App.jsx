@@ -12,7 +12,12 @@ const App = () => {
       <Route path='/' element={<MainLayout />}>
         <Route index element={<HomePage />} />
         <Route path='/stockemoise' element={<StockemoisePage />} />
-        <Route path='/portfolio' element={<PortfolioPage />} />
+        <Route path='/port-folio' element={<PortfolioPage />} />
+
+        {/*TODO this is specifically for gh-pages, make it a redirect link later*/}
+        <Route path='/portfolio' element={<HomePage />} />
+
+
         <Route path='/*' element={<NotFoundPage />} />
       </Route>
     )

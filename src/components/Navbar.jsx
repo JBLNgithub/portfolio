@@ -13,7 +13,7 @@ const Navbar = () => {
             <NavButton label='Stockemoise' ref='/stockemoise' />
           </li>
           <li>
-            <NavButton label='Portfolio' ref='/portfolio' />
+            <NavButton label='Portfolio' ref='/port-folio' />
           </li>
         </ul>
       </div>

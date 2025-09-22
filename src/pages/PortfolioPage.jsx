@@ -10,7 +10,7 @@ const PortfolioPage = () => {
         <ProjectHeader
           title='Portfolio'
           isInDev='true'
-          refApp='https://jblngithub.github.io/portfolio/'
+          refApp='https://jblngithub.github.io/port-folio/'
           refGithub='https://github.com/JBLNgithub/portfolio'
         >
           <p>

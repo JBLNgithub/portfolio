@@ -3,3 +3,4 @@
     - about me
     - navbar
     - stockemoise
+- make same links import from common variable
