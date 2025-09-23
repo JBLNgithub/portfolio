@@ -67,6 +67,14 @@ const StockemoisePage = () => {
           img2='actuModelStockem.png'
           img1='actuAppStockem.png'
         />
+
+        <Comparator 
+        label1='EA Diag'
+        label2='Traduction'
+        img1='EADiagStockemoise.png'
+        img2='ERDiagStockemoise.png'
+        />
+
       </section>
     </>
   )
