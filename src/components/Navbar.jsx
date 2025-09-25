@@ -8,10 +8,10 @@ const Navbar = () => {
   return (
     <div className='text-neutral-200 bg-neutral-800 size-full'>
 
-      <div className='text-center md:hidden'>
+      <div className='fixed top-6 left-3 md:hidden'>
         <FiMenu 
           onClick={() => toggleMenu() } 
-          className='inline mt-5' />
+          className='inline' />
       </div>
 
       <div className='nav-links hidden md:block fixed top-5 left-16 md:top-100 md:left-20'>
