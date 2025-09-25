@@ -39,7 +39,7 @@ const SkillTile = ({name}) => {
   }
 
   return (
-    <div className='bg-neutral-300 rounded-md mt-2 text-center py-1'>
+    <div className='bg-neutral-300 rounded-md mt-2 text-center py-1 col-span-2 md:col-span-1'>
       {icon(name)}
       {name}
     </div>

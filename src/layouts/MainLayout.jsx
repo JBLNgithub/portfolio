@@ -9,7 +9,7 @@ const MainLayout = () => {
         <div className='col-span-1'>
             <Navbar />
         </div>
-        <div className='col-span-5 container m-auto py-10 px-6'>
+        <div className='col-span-5 container m-auto py-6 px-2'>
             <Outlet />
         </div>
     </div>
