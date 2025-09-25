@@ -22,7 +22,7 @@ const ProjectHeader = ({children, title, refApp, refGithub, labelOrg, refOrg, is
             {inDevWarning()}
         </div>
 
-        <div className='grid grid-cols-3 gap-8 mt-6 text-center'>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-8 mt-6 text-center'>
             {refApp === undefined ? '' : <AppButton ref={refApp} />}
             {refGithub === undefined ? '' : <GithubButton ref={refGithub} />}
             {refOrg === undefined ? '' : <ExternalButton label={labelOrg} ref={refOrg} />}
