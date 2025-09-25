@@ -26,7 +26,7 @@ const StockemoisePage = () => {
             To reach these goals, tabs are set by activity. Each tab has a single role to fill. Also, a sidebar is designed to easily find informations on next concerts and news. Models were made before the start of implementation.
           </p>
           <p className='mt-4'>
-            There is currently no back-end. Datas are being saved in a json file. I plan to develop a REST API later on.
+            There is currently no back-end. Datas are being saved in a json file. REST API is in dev.
           </p>
 
           <UsedTechno>

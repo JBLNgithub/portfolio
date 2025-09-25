@@ -2,7 +2,8 @@ import React from 'react'
 import {FaPython, FaJava, FaHtml5, FaReact, FaFigma} from 'react-icons/fa'
 import {IoLogoJavascript, IoLogoCss3} from 'react-icons/io5'
 import {RiTailwindCssFill} from 'react-icons/ri'
-import {SiMermaid} from 'react-icons/si'
+import {SiMermaid, SiExpress} from 'react-icons/si'
+import { BiLogoPostgresql } from 'react-icons/bi'
 
 
 const SkillTile = ({name}) => {
@@ -28,6 +29,10 @@ const SkillTile = ({name}) => {
         return(<FaFigma className={iconClass} />)
       case "Mermaid":
         return(<SiMermaid className={iconClass} />)
+      case "Express":
+        return(<SiExpress className={iconClass} />)
+      case "Postgresql":
+        return(<BiLogoPostgresql className={iconClass} />)
       default:
         return ''
     }

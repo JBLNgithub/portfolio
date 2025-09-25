@@ -46,7 +46,7 @@ const HomePage = () => {
 
         </div>
 
-        <h3 className='text-2xl mt-10'>Web</h3>
+        <h3 className='text-2xl mt-10'>Front-end</h3>
         <div className='grid grid-cols-4 mt-4 gap-3'>
           <SkillTile name='HTML' />
           <SkillTile name='CSS' />
@@ -54,9 +54,10 @@ const HomePage = () => {
           <SkillTile name='Tailwind' />
         </div>
 
-        <h3 className='text-2xl mt-10'>Others</h3>
+        <h3 className='text-2xl mt-10'>Back-end</h3>
         <div className='grid grid-cols-4 mt-4 gap-3'>
-          <SkillTile name='SQL' />
+          <SkillTile name='Express' />
+          <SkillTile name='Postgresql' />
         </div>
 
       </section>
