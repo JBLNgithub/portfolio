@@ -55,7 +55,7 @@ const HomePage = () => {
         </div>
 
         <h3 className='text-2xl mt-10'>Back-end</h3>
-        <div className='grid grid-cols-4 mt-4 gap-3'>
+        <div className='grid grid-cols-4 mt-4 gap-3 mb-10'>
           <SkillTile name='Express' />
           <SkillTile name='Postgresql' />
         </div>
