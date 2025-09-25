@@ -1,10 +1,10 @@
 # ! Currently in development !
 
-Portfolio is a little webapp made to regroup and introduce pasts and futures personal project
+Portfolio is a little webapp made to regroup and introduce pasts and futures personal project¨. More informations on the app.
 
-[preview App](https://jblngithub.github.io/portfolio/)
+[PREVIEW APP](https://jblngithub.github.io/portfolio/)
 
-version : 0.1
+version : 0.2
 
 ### Techno used
 
