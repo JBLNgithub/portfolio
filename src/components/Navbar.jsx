@@ -6,7 +6,7 @@ import toggleMenu from '../utils/toggleMenu'
 const Navbar = () => {
 
   return (
-    <div className='text-neutral-200 bg-neutral-800 size-full'>
+    <div className='text-neutral-200 bg-neutral-800 size-full min-h-screen'>
 
       <div className='fixed top-6 left-3 md:hidden'>
         <FiMenu 

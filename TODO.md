@@ -1,6 +1,2 @@
 - update tab picture
-- make responsive
-    - about me
-    - navbar
-    - stockemoise
-- make same links import from common variable
+- fixe navbar position

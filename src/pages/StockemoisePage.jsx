@@ -70,7 +70,7 @@ const StockemoisePage = () => {
 
         <Comparator 
         label1='EA Diag'
-        label2='Traduction'
+        label2='Translation'
         img1='EADiagStockemoise.png'
         img2='ERDiagStockemoise.png'
         />
