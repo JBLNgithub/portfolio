@@ -51,6 +51,7 @@ const StockemoisePage = () => {
             <SkillTile name='Figma' />
             <SkillTile name='Mermaid' />
             <SkillTile name='Express' />
+            <SkillTile name='SQLite3' />
             <SkillTile name='Swagger' />
           </UsedTechno>
 
