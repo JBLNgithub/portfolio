@@ -4,7 +4,7 @@ import AppButton from '../components/AppButton'
 import GithubButton from '../components/GithubButton'
 import ExternalButton from '../components/ExternalButton'
 
-const ProjectHeader = ({children, title, refApp, refGithub, labelOrg, refOrg, isInDev='false'}) => {
+const ProjectHeader = ({children, title, refApp, refGithub, labelOrg, refOrg, isInDev='false', refs}) => {
     function inDevWarning() {
         return (isInDev === 'false'  ? '' : 
             <>
@@ -23,9 +23,7 @@ const ProjectHeader = ({children, title, refApp, refGithub, labelOrg, refOrg, is
         </div>
 
         <div className='grid grid-cols-1 md:grid-cols-3 gap-8 mt-6 text-center'>
-            {refApp === undefined ? '' : <AppButton ref={refApp} />}
-            {refGithub === undefined ? '' : <GithubButton ref={refGithub} />}
-            {refOrg === undefined ? '' : <ExternalButton label={labelOrg} ref={refOrg} />}
+            {refs.map(r => <ExternalButton label={r.label} ref={r.ref} isGithub={r.isGithub}/>)}
         </div>
     </section>
   )
