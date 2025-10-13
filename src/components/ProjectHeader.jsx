@@ -1,7 +1,5 @@
 import React from 'react'
 import {FaExclamationTriangle} from 'react-icons/fa'
-import AppButton from '../components/AppButton'
-import GithubButton from '../components/GithubButton'
 import ExternalButton from '../components/ExternalButton'
 
 const ProjectHeader = ({children, title, refApp, refGithub, labelOrg, refOrg, isInDev='false', refs}) => {
