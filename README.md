@@ -4,7 +4,7 @@ Portfolio is a little webapp made to regroup and introduce pasts and futures per
 
 [PREVIEW APP](https://jblngithub.github.io/portfolio/)
 
-version : 0.2
+version : 0.3
 
 ### Techno used
 
