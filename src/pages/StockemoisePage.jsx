@@ -39,10 +39,10 @@ const StockemoisePage = () => {
             To reach these goals, tabs are set by activity. Each tab has a single role to fill. Also, a sidebar is designed to easily find informations on next concerts and news. Models were made before the start of implementation.
           </p>
           <p className='mt-4'>
-            Frontend is a react App with tailwind for the style.
+            Frontend is a react App with tailwind for style. Datas are being save in json files until backend is done.
           </p>
           <p className='mt-4'>
-            Backend is a REST API runing on an express.js server. API documentations is generated with swagger. If the link to swagger editor doesn't work properly, docs can be imported in the swagger editor with the link <span className='bg-neutral-300 px-2 py-0.5 rounded-2xl'>https://raw.githubusercontent.com/JBLNgithub/stockemoise-backend/refs/heads/main/src/datas/spec.json</span> docs is also available when running the backend at <span className='bg-neutral-300 px-2 py-0.5 rounded-2xl'>&#8249;host&#8250;&#8249;port&#8250;/api-docs</span>
+            Backend is a REST API runing on an express.js server. Validations are made with vine. API documentations is generated with swagger. If the link to swagger editor doesn't work properly, docs can be imported in the swagger editor with the link <span className='bg-neutral-300 px-2 py-0.5 rounded-2xl'>https://raw.githubusercontent.com/JBLNgithub/stockemoise-backend/refs/heads/main/src/datas/spec.json</span> docs is also available while running the backend at <span className='bg-neutral-300 px-2 py-0.5 rounded-2xl'>&#8249;host&#8250;&#8249;port&#8250;/api-docs</span>
           </p>
 
           <UsedTechno>
