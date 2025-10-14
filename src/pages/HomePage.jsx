@@ -6,7 +6,7 @@ const HomePage = () => {
   return (
     <>
       <section className='text-center mt-20'>
-        <h1 className='text-6xl md:text-8xl font-bold mb-40'>Junior Dev</h1>
+        <h1 className='text-6xl md:text-8xl font-bold mb-40'>Junior Full-Stack Dev</h1>
 
         <div className='grid grid-cols-3'>
           <div className='col-span-3 md:col-span-1 row-span-2 mb-20 md:mb-6'>
