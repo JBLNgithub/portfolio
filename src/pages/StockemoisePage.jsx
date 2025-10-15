@@ -4,6 +4,7 @@ import Comparator from '../components/Comparator'
 import UsedTechno from '../components/UsedTechno'
 import SkillTile from '../components/SkillTile'
 import Mermaid from '../components/Mermaid'
+import BasicLink from '../components/basicLink'
 
 import {stockemoiseDatabase, stockemoiseUseCase} from '../utils/diagsMermaid'
 
@@ -42,7 +43,7 @@ const StockemoisePage = () => {
             Frontend is a react App with tailwind for style. Datas are being save in json files until backend is done.
           </p>
           <p className='mt-4'>
-            Backend is a REST API runing on an express.js server. Validations are made with vine. API documentations is generated with swagger. If the link to swagger editor doesn't work properly, docs can be imported in the swagger editor with the link <span className='bg-neutral-300 px-2 py-0.5 rounded-2xl'>https://raw.githubusercontent.com/JBLNgithub/stockemoise-backend/refs/heads/main/src/datas/spec.json</span> docs is also available while running the backend at <span className='bg-neutral-300 px-2 py-0.5 rounded-2xl'>&#8249;host&#8250;&#8249;port&#8250;/api-docs</span>
+            Backend is a REST API runing on an express.js server. Validations are made with <BasicLink lin='https://vinejs.dev/docs/introduction' label='vine' />. API documentations is generated with <BasicLink lin='https://swagger.io/' label='swagger' />. API test are available with <BasicLink lin='https://www.usebruno.com/' label='bruno' />. If the link to swagger editor doesn't work properly, docs can be imported in the swagger editor with the link <span className='bg-neutral-300 px-2 py-0.5 rounded-2xl'>https://raw.githubusercontent.com/JBLNgithub/stockemoise-backend/refs/heads/main/src/datas/spec.json</span> docs is also available while running the backend at <span className='bg-neutral-300 px-2 py-0.5 rounded-2xl'>&#8249;host&#8250;&#8249;port&#8250;/api-docs</span>
           </p>
 
           <UsedTechno>
@@ -92,6 +93,13 @@ const StockemoisePage = () => {
         label2='Translation'
         img1='EADiagStockemoise.png'
         img2='ERDiagStockemoise.png'
+        />
+        
+        <Comparator 
+        label1='Use Case'
+        label2='API tests'
+        img1='useCaseStockemoise.png'
+        img2='testsStockemoise.png'
         />
 
       </section>

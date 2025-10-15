@@ -87,11 +87,15 @@ export const stockemoiseDatabase = `erDiagram
         }
 
         Location {
-            string name "pk"
+            int id "pk"
+            string name
             string rue
             int number
             string additionalAdress "optional"
-            int codePostal
+        }
+
+        Locality {
+            int codePostal "pk"
             string city
             string country
         }
@@ -101,6 +105,7 @@ export const stockemoiseDatabase = `erDiagram
         Concert }o..|| Event : is-A
         News }o..o| Event : canBe-A
         Event }o--|| Location : locate
+        Location }o--|| Locality : locate
 
         User {
             int id "pk"

@@ -5,7 +5,7 @@ import SkillTile from '../components/SkillTile'
 
 const PortfolioPage = () => {
   const refs = [
-    {label:'App', ref:'https://jblngithub.github.io/port-folio/', isGithub:'false'},
+    {label:'App', ref:'https://jblngithub.github.io/portfolio/', isGithub:'false'},
     {label:'github', ref:'https://github.com/JBLNgithub/portfolio', isGithub:'true'},
   ]
 
