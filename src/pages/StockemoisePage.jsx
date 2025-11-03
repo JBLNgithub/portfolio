@@ -11,11 +11,11 @@ import {stockemoiseDatabase, stockemoiseUseCase} from '../utils/diagsMermaid'
 
 const StockemoisePage = () => {
   const refs = [
-    {label:'frontend', ref:'https://jblngithub.github.io/stockemoise/', isGithub:'false'},
-    {label:'current website', ref:'https://stockemoise.be/', isGithub:'false'},
-    {label:'frontend', ref:'https://github.com/JBLNgithub/stockemoise', isGithub:'true'},
-    {label:'backend', ref:'https://github.com/JBLNgithub/stockemoise-backend', isGithub:'true'},
-    {label:'API docs', ref:'https://editor.swagger.io/?url=https://raw.githubusercontent.com/JBLNgithub/stockemoise-backend/refs/heads/main/src/datas/spec.json', isGithub:'false'},
+    {label:'Webapp', ref:'https://stockemoise.onrender.com/', isGithub:'false'},
+    {label:'Current website', ref:'https://stockemoise.be/', isGithub:'false'},
+    {label:'Frontend', ref:'https://github.com/JBLNgithub/stockemoise', isGithub:'true'},
+    {label:'Backend', ref:'https://github.com/JBLNgithub/stockemoise-backend', isGithub:'true'},
+    {label:'API docs', ref:'https://stockemoise.onrender.com/api-docs/', isGithub:'false'},
   ]
 
   return (
@@ -43,7 +43,13 @@ const StockemoisePage = () => {
             Frontend is a react App with tailwind for style. Datas are being save in json files until backend is done.
           </p>
           <p className='mt-4'>
-            Backend is a REST API runing on an express.js server. Validations are made with <BasicLink lin='https://vinejs.dev/docs/introduction' label='vine' />. API documentations is generated with <BasicLink lin='https://swagger.io/' label='swagger' />. API test are available with <BasicLink lin='https://www.usebruno.com/' label='bruno' />. If the link to swagger editor doesn't work properly, docs can be imported in the swagger editor with the link <span className='bg-neutral-300 px-2 py-0.5 rounded-2xl'>https://raw.githubusercontent.com/JBLNgithub/stockemoise-backend/refs/heads/main/src/datas/spec.json</span> docs is also available while running the backend at <span className='bg-neutral-300 px-2 py-0.5 rounded-2xl'>&#8249;host&#8250;&#8249;port&#8250;/api-docs</span>
+            Backend is a REST API runing on an express.js server. Validations are made with <BasicLink lin='https://vinejs.dev/docs/introduction' label='vine' />. API documentations is generated with <BasicLink lin='https://swagger.io/' label='swagger' />. API test are available with <BasicLink lin='https://www.usebruno.com/' label='bruno' />. Password are hashed with <BasicLink lin='https://github.com/ranisalt/node-argon2' label='argon2' />.
+          </p>
+          <p className='mt-4'>
+            Database is currently made with SQLite3.
+          </p>
+          <p className='mt-4'>
+            The webapp allow admins to log in et manage concerts and news through built-in tools. CRUD fonctionnalities are implemented.
           </p>
 
           <UsedTechno>
