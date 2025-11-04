@@ -1,5 +1,5 @@
 import React from 'react'
-import {FaPython, FaJava, FaHtml5, FaReact, FaFigma} from 'react-icons/fa'
+import {FaPython, FaJava, FaHtml5, FaReact, FaFigma, FaNodeJs} from 'react-icons/fa'
 import {IoLogoJavascript, IoLogoCss3} from 'react-icons/io5'
 import {RiTailwindCssFill} from 'react-icons/ri'
 import {SiMermaid, SiExpress, SiSwagger, SiSqlite} from 'react-icons/si'
@@ -37,6 +37,8 @@ const SkillTile = ({name}) => {
         return(<SiSwagger className={iconClass} />)
       case "SQLite3":
         return(<SiSqlite className={iconClass} />)
+      case "Node.js":
+        return(<FaNodeJs className={iconClass} />)
       default:
         return ''
     }

@@ -31,19 +31,10 @@ const HomePage = () => {
         <h3 className='text-2xl mt-10'>Programming Languages</h3>
         <div className='grid grid-cols-4 mt-4 gap-3'>
           <SkillTile name='Python' />
-
           <SkillTile name='Java' />
-
-
           <SkillTile name='C' />
-
-
           <SkillTile name='C#' />
-
-
           <SkillTile name='Javascript' />
-
-
         </div>
 
         <h3 className='text-2xl mt-10'>Front-end</h3>
@@ -56,7 +47,7 @@ const HomePage = () => {
 
         <h3 className='text-2xl mt-10'>Back-end</h3>
         <div className='grid grid-cols-4 mt-4 gap-3'>
-          <SkillTile name='Express' />
+          <SkillTile name='Node.js' />
           <SkillTile name='SQL' />
         </div>
 

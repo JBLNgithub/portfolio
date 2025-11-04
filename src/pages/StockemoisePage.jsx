@@ -55,10 +55,11 @@ const StockemoisePage = () => {
           <UsedTechno>
             <SkillTile name='React' />
             <SkillTile name='Tailwind' />
+            <SkillTile name='Node.js' />
+            <SkillTile name='SQLite3' />
             <SkillTile name='Figma' />
             <SkillTile name='Mermaid' />
             <SkillTile name='Express' />
-            <SkillTile name='SQLite3' />
             <SkillTile name='Swagger' />
           </UsedTechno>
 
@@ -113,7 +114,7 @@ const StockemoisePage = () => {
       <section>
         <Mermaid title='Use Case' code={stockemoiseUseCase} />
 
-        <Mermaid title='EA Diag' code={stockemoiseDatabase} />
+        {/* <Mermaid title='EA Diag' code={stockemoiseDatabase} /> */}
       </section>
     </>
   )
