@@ -4,7 +4,7 @@ import Comparator from '../components/Comparator'
 import UsedTechno from '../components/UsedTechno'
 import SkillTile from '../components/SkillTile'
 import Mermaid from '../components/Mermaid'
-import BasicLink from '../components/basicLink'
+import BasicLink from '../components/BasicLink'
 
 import {stockemoiseDatabase, stockemoiseUseCase} from '../utils/diagsMermaid'
 
@@ -113,7 +113,7 @@ const StockemoisePage = () => {
 
       <section>
         <Mermaid title='Use Case' code={stockemoiseUseCase} />
-
+npm
         {/* <Mermaid title='EA Diag' code={stockemoiseDatabase} /> */}
       </section>
     </>
