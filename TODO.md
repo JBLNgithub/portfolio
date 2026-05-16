@@ -1,3 +1,2 @@
-- update tab picture
 - fixe navbar position
 - make mmd imported from files
