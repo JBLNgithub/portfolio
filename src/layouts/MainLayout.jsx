@@ -10,10 +10,12 @@ const MainLayout = () => {
         <div className='col-span-1'>
             <Navbar />
         </div>
-        <div className='col-span-8 md:col-span-5 container m-auto px-8'>
+        <div className='col-span-8 md:col-span-5 container m-auto px-8 mb-20'>
             <Outlet />
-            <Footer />
         </div>
+        <footer className='col-span-full'>
+            <Footer />
+        </footer>
     </div>
   )
 }
