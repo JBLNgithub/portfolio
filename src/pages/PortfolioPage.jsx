@@ -24,6 +24,7 @@ const PortfolioPage = () => {
           <UsedTechno>
             <SkillTile name='React' />
             <SkillTile name='Tailwind' />
+            <SkillTile name='Apache2' />
           </UsedTechno>
 
         </ProjectHeader>

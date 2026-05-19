@@ -1,8 +1,8 @@
 import React from 'react'
-import {FaPython, FaJava, FaHtml5, FaReact, FaFigma, FaNodeJs} from 'react-icons/fa'
+import {FaPython, FaJava, FaHtml5, FaReact, FaFigma, FaNodeJs, FaGitAlt, FaDocker} from 'react-icons/fa'
 import {IoLogoJavascript, IoLogoCss3} from 'react-icons/io5'
 import {RiTailwindCssFill} from 'react-icons/ri'
-import {SiMermaid, SiExpress, SiSwagger, SiSqlite} from 'react-icons/si'
+import {SiMermaid, SiExpress, SiSwagger, SiSqlite, SiApache} from 'react-icons/si'
 import { BiLogoPostgresql } from 'react-icons/bi'
 
 
@@ -39,6 +39,12 @@ const SkillTile = ({name}) => {
         return(<SiSqlite className={iconClass} />)
       case "Node.js":
         return(<FaNodeJs className={iconClass} />)
+      case "Apache2":
+        return(<SiApache className={iconClass} />)
+      case "Git":
+        return(<FaGitAlt className={iconClass} />)
+      case "Docker":
+        return(<FaDocker className={iconClass} />)
       default:
         return ''
     }

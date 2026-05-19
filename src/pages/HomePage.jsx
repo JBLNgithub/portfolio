@@ -50,7 +50,13 @@ const HomePage = () => {
           <SkillTile name='Node.js' />
           <SkillTile name='SQL' />
         </div>
-
+        
+        <h3 className='text-2xl mt-10'>Utils</h3>
+        <div className='grid grid-cols-4 mt-4 gap-3'>
+          <SkillTile name='Git' />
+          <SkillTile name='Docker' />
+          <SkillTile name='Apache2' />
+        </div>
       </section>
     </>
   )
