@@ -1,11 +1,3 @@
-# ! Currently in development !
+Portfolio is a lightweight webapp designed to showcase my past and upcoming projects.
 
-Portfolio is a little webapp made to regroup and introduce pasts and futures personal project¨. More informations on the app.
-
-[PREVIEW APP](https://jblngithub.github.io/portfolio/)
-
-version : 0.5
-
-### Techno used
-
-React + Tailwind
+[PORTFOLIO](https://portfolio.jbln.be/)

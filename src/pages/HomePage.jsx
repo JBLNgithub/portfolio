@@ -1,65 +1,61 @@
-import React from 'react'
-import profilePic from '../assets/images/profilePic.jpg'
-import SkillTile from '../components/SkillTile'
+import profilePic from "../assets/images/profilePic.jpg"
+import SkillList from "../components/skillList/SkillList"
+import ProjectList from '../components/ProjectList'
+import {homeConfig} from "../config/projectConfigs";
+
 
 const HomePage = () => {
-  return (
-    <>
-      <section className='text-center mt-20'>
-        <h1 className='text-6xl md:text-8xl font-bold mb-40'>Full-Stack Dev</h1>
+	return (
+		<>
+			<section>
+				<h1>Full-Stack Dev</h1>
 
-        <div className='grid grid-cols-3'>
-          <div className='col-span-3 md:col-span-1 row-span-2 mb-20 md:mb-6'>
-            <div className=''>
-              <img src={profilePic} alt='profile pic' className='size-50 object-cover rounded-full border-neutral-800 border-2 inline-block' />
-            </div>
-            <h3 className='text-4xl mt-3'>José Balon</h3>
-          </div>
-          <h2 className='text-5xl col-span-3 md:col-span-2 mb-5'>About me</h2>
-          <p className='col-span-3 md:col-span-2'>
-            Hi, I'm José.<br className='mb-4' />
-            I'm dev who likes to develop IT projects. I have a methodical way of thinking and so problem-solving and continuous learning has been a thing for me. I'm always open to discuss with people, brainstorming and contributing to a collaborative environment. This allow me to learn from others, share knowledge and finally build better solutions. <br className='mb-4' />
-            Outside of IT, my lobbies are essentially about music. I play saxophone and organ. I also play in an orchestra where I teach a bit.
-          </p>
-        </div>
-      </section>
-        <p></p>
+				<div className="grid grid-cols-3">
+					<div className="col-span-3 md:col-span-1 text-center mt-16">
+						<div>
+							<img
+								src={profilePic}
+								alt="profile pic"
+								className="size-50 object-cover rounded-full border-neutral-800 border-2 inline-block"
+							/>
+							<h3 className="font-bold">José Balon</h3>
+						</div>
+					</div>
 
-      <section className='mt-30'>
-        <h2 className='text-5xl'>Skills</h2>
+					<div className="col-span-3 md:col-span-2">
+						<h2>
+							About me
+						</h2>
+						<p>
+							Hi, I'm José!
+							<br />
+							I'm developer who loves building IT projects. Thanks to my methodical approach to thinking, I naturally thrive on problem-solving and continuous learning. I enjoy breaking down technical concepts, aligning development goals with the bigger picture, and ensuring that solutions do acheive what they are built for.<br />
+							Outside of tech, my hobbies mostly revolves around music. I
+							play the saxophone and the organ. I also play in an orchestra
+							where I get to do a bit of teaching!
+						</p>
+					</div>
+				</div>
+			</section>
 
-        <h3 className='text-2xl mt-10'>Programming Languages</h3>
-        <div className='grid grid-cols-4 mt-4 gap-3'>
-          <SkillTile name='Javascript' />
-          <SkillTile name='Python' />
-          <SkillTile name='Java' />
-          <SkillTile name='C' />
-          <SkillTile name='C#' />
-        </div>
+			<section>
+				<h2>Overview</h2>
+				<SkillList title="Capabilities" skillsList={homeConfig.capabilities} gridSize={2} />
+			</section>
 
-        <h3 className='text-2xl mt-10'>Front-end</h3>
-        <div className='grid grid-cols-4 mt-4 gap-3'>
-          <SkillTile name='React' />
-          <SkillTile name='Tailwind' />
-          <SkillTile name='HTML' />
-          <SkillTile name='CSS' />
-        </div>
+			<section>
+				<h2>Tool set</h2>
+				<SkillList title="Languages" skillsList={homeConfig.progLanguages} gridSize={4} />
+				<SkillList title="Front-End" skillsList={homeConfig.frontEnd} gridSize={4} />
+				<SkillList title="Back-End" skillsList={homeConfig.backEnd} gridSize={4} />
+				<SkillList title="Utils" skillsList={homeConfig.utils} gridSize={4} />
+			</section>
 
-        <h3 className='text-2xl mt-10'>Back-end</h3>
-        <div className='grid grid-cols-4 mt-4 gap-3'>
-          <SkillTile name='Node.js' />
-          <SkillTile name='SQL' />
-        </div>
-        
-        <h3 className='text-2xl mt-10'>Utils</h3>
-        <div className='grid grid-cols-4 mt-4 gap-3'>
-          <SkillTile name='Git' />
-          <SkillTile name='Docker' />
-          <SkillTile name='Apache2' />
-        </div>
-      </section>
-    </>
-  )
-}
+			<section>
+				<ProjectList title="Projects" projects={homeConfig.projects} />
+			</section>
+		</>
+	);
+};
 
-export default HomePage
+export default HomePage;

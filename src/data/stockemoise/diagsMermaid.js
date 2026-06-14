@@ -1,6 +1,6 @@
 export const stockemoiseUseCase = `C4Container
         title La stockemoise
-        
+
         Person_Ext(vis, "visitor")
         Person(op, "operator", "level: 2")
         %%Person(mod, "moderator", "level: 1")
@@ -71,7 +71,7 @@ export const stockemoiseDatabase = `erDiagram
             date dateRedaction
             string cover "optional"
         }
-        
+
         Event {
             datetime dateEvent
             bool isCanceled
@@ -101,5 +101,6 @@ export const stockemoiseDatabase = `erDiagram
         User {
             int id "pk"
             string email
+            string password "hashed"
             int level
         }`

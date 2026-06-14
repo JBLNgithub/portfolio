@@ -1,101 +1,102 @@
-import React from 'react'
-import ProjectHeader from '../components/ProjectHeader'
-import Comparator from '../components/Comparator'
-import UsedTechno from '../components/UsedTechno'
-import SkillTile from '../components/SkillTile'
-import Mermaid from '../components/Mermaid'
-import BasicLink from '../components/BasicLink'
-
-import {stockemoiseDatabase, stockemoiseUseCase} from '../utils/diagsMermaid'
+import ProjectHeader from "../components/ProjectHeader"
+import Comparator from "../components/comparator/Comparator"
+import Mermaid from "../components/Mermaid"
+import { stockemoiseDatabase, stockemoiseUseCase } from "../data/stockemoise/diagsMermaid"
+import SkillList from "../components/skillList/SkillList"
+import { stockemoiseConfig } from "../config/projectConfigs"
+const PROJECT = 'stockemoise'
 
 
 const StockemoisePage = () => {
-  const refs = [
-    {label:'Webapp', ref:'http://stockemoise.jbln.be', isGithub:'false'},
-    {label:'Current website', ref:'https://stockemoise.be/', isGithub:'false'},
-    {label:'Frontend', ref:'https://github.com/JBLNgithub/stockemoise', isGithub:'true'},
-    {label:'Backend', ref:'https://github.com/JBLNgithub/stockemoise-backend', isGithub:'true'},
-  ]
+	return (
+		<>
+			<section>
+				<ProjectHeader
+					title="La Stockemoise"
+					isInDev="true"
+					refs={stockemoiseConfig.refs}
+				>
+					<p>
+						La Stockemoise is a Belgian amateur wind orchestra that
+						I've played in for several years. The original Wordpress
+						website seemed a bit old, so completely Reimagining and
+						rebuilding it as a modern wep app revealed to be a
+						meaningfull challenge.
+					</p>
+					<h3>Goals</h3>
+					<p className="mt-4">
+						The original website struggled to clearly communicate
+						the orchestra's activites & upcoming concerts. The main
+						goals for the application are so : clarify activities,
+						enhance concerts tracking, maintain a news feed.
+					</p>
+					<h3>Solutions</h3>
+					<p className="mt-4">
+						To achieve these goals, I've defined two main
+						architecture : activity-based tabs and persistant
+						sidebar.
+						<br /> Each single one of the activity-based tabs
+						clearly define a activity carry on by the orchestra,
+						removing confusion.
+						<br />
+						Also, the persistant sidebar ensure that critical
+						information (AKA upcoming concerts) will always be just
+						a glance away.
+					</p>
+					<br />
+					<p>Now there is no excuses to not come listen to us !</p>
+					<SkillList title='Stack' skillsList={stockemoiseConfig.stack} gridSize={3} />
+				</ProjectHeader>
+			</section>
 
-  return (
-    <>
-      <section>
-        <ProjectHeader 
-          title='La Stockemoise' 
-          isInDev='true' 
-          refApp='https://jblngithub.github.io/stockemoise/'
-          refGithub='https://github.com/JBLNgithub/stockemoise'
-          labelOrg='Official Website'
-          refOrg='https://stockemoise.be/'
-          refs={refs}
-        >
-          <p>
-            La Stockemoise is a Belgian amateur wind orchestra which I've played whitin for quite some times now. The current website of the orchestra is a WordPress, so Reimagining the website became a logical thing to do.
-          </p>
-          <p className='mt-4'>
-            The goals of the new App were to define more clearly activities the orchestra is carrying out and a better follow-up of upcoming concerts while still allowing news to be published.
-          </p>
-          <p className='mt-4'>
-            To reach these goals, tabs are set by activity. Each tab has a single role to fill. Also, a sidebar is designed to easily find informations on next concerts and news.
-          </p>
+			<section>
+				<Comparator
+					label2="Old site"
+					label1="New site"
+					img2="homeOffStockem.png"
+					img1="homeAppStockem.png"
+					project={PROJECT}
+				/>
 
-          <UsedTechno>
-            <SkillTile name='React' />
-            <SkillTile name='Tailwind' />
-            <SkillTile name='Node.js' />
-            <SkillTile name='Postgresql' />
-            <SkillTile name='SQLite3' />
-            <SkillTile name='Figma' />
-            <SkillTile name='Mermaid' />
-            <SkillTile name='Express' />
-          </UsedTechno>
+				<Comparator
+					label2="Old site"
+					label1="New site"
+					img2="actuOffStockem.png"
+					img1="actuAppStockem.png"
+					project={PROJECT}
+				/>
 
-        </ProjectHeader>
-      </section>
+				<Comparator
+					label2="Model"
+					label1="New site"
+					img2="homeModelStockem.png"
+					img1="homeAppStockem.png"
+					project={PROJECT}
+				/>
 
-      <section>
-        <Comparator
-          label2='Old site'
-          label1='New site'
-          img2='homeOffStockem.png'
-          img1='homeAppStockem.png'
-        />
+				<Comparator
+					label2="Model"
+					label1="New"
+					img2="actuModelStockem.png"
+					img1="actuAppStockem.png"
+					project={PROJECT}
+				/>
 
-        <Comparator
-          label2='Old site'
-          label1='New site'
-          img2='actuOffStockem.png'
-          img1='actuAppStockem.png'
-        />
+				<Comparator
+					label1="EA Diag"
+					label2="Translation"
+					img1="EADiagStockemoise.png"
+					img2="ERDiagStockemoise.png"
+					project={PROJECT}
+				/>
+			</section>
 
-        <Comparator
-          label2='Model'
-          label1='New site'
-          img2='homeModelStockem.png'
-          img1='homeAppStockem.png'
-        />
-        
-        <Comparator
-          label2='Model'
-          label1='New'
-          img2='actuModelStockem.png'
-          img1='actuAppStockem.png'
-        />
-
-        <Comparator 
-        label1='EA Diag'
-        label2='Translation'
-        img1='EADiagStockemoise.png'
-        img2='ERDiagStockemoise.png'
-        />
-      </section>
-
-      <section>
-        <Mermaid title='Use Case' code={stockemoiseUseCase} />
-        <Mermaid title='EA Diag' code={stockemoiseDatabase} />
-      </section>
-    </>
-  )
+			<section>
+				<Mermaid title="Use Case" code={stockemoiseUseCase} />
+				<Mermaid title="EA Diag" code={stockemoiseDatabase} />
+			</section>
+		</>
+	)
 }
 
 export default StockemoisePage

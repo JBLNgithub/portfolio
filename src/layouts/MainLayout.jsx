@@ -1,23 +1,21 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
-
+import { Outlet } from "react-router-dom";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const MainLayout = () => {
-  return (
-    <div className='grid grid-cols-9 md:grid-cols-6'>
-        <div className='col-span-1'>
-            <Navbar />
-        </div>
-        <div className='col-span-8 md:col-span-5 container m-auto px-8 mb-20'>
-            <Outlet />
-        </div>
-        <footer className='col-span-full'>
-            <Footer />
-        </footer>
-    </div>
-  )
-}
+	return (
+		<>
+			<div className="grid grid-cols-6">
+				<Navbar />
+				<div className="col-span-6 md:col-span-5">
+					<div className="px-3">
+						<Outlet />
+					</div>
+					<Footer />
+				</div>
+			</div>
+		</>
+	);
+};
 
-export default MainLayout
+export default MainLayout;

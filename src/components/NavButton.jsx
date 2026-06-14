@@ -1,4 +1,3 @@
-import React from 'react'
 import { NavLink } from 'react-router-dom'
 import topThePage from '../utils/TopThePage'
 import toggleMenu from '../utils/toggleMenu'
