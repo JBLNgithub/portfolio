@@ -1,4 +1,5 @@
 import {MdOutlineEmail} from 'react-icons/md'
+import Logo from '../components/Logo'
 
 
 const Footer = () => {
@@ -10,6 +11,9 @@ const Footer = () => {
                 <MdOutlineEmail className='inline mb-1 mr-1' />
                 jashbalon@gmail.com
             </a>
+            <div className='mt-20'>
+            <Logo className='inline-block w-30' />
+            </div>
         </footer>
     )
 }

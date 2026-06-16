@@ -2,8 +2,8 @@ import { FiMenu } from "react-icons/fi"
 import { NavLink } from "react-router-dom"
 import topThePage from "../utils/TopThePage"
 import {homeConfig} from "../config/projectConfigs"
+import Logo from '../components/Logo'
 
-//  size-full min-h-screen (tailwind full size navbar)
 
 
 export default function Navbar() {
@@ -21,9 +21,14 @@ export default function Navbar() {
 						<NavLink to={p.link} className={isCurrentTab} onClick={mobileNavClick}>{p.label}</NavLink>
 					</li>)}
 			</ul>
-			<FiMenu onClick={toggleMenu} className="md:hidden fixed bg-neutral-800 hover:bg-sky-500 hover:text-neutral-800 text-3xl right-5 top-5 rounded-md" />
+			{/* --- LOGO NAV TOGGLER ---*/}
+			<button onClick={toggleMenu} className="md:hidden fixed right-5 top-5">
+				<Logo size={'100'} className="bg-neutral-800 hover:bg-sky-500 hover:text-neutral-800 text-3xl rounded-md p-2" />
+			</button>
+			{/* --- BASIC ICON IF I REMOVE LOGO CLICK ---*/}
+			{/* <FiMenu onClick={toggleMenu} className="md:hidden fixed bg-neutral-800 hover:bg-sky-500 hover:text-neutral-800 text-3xl right-5 top-5 rounded-md" />*/}
 
-			{/* TABLETTE & DESKTOP NAVBAR */}
+			{/*--- TABLETTE & DESKTOP NAVBAR ---*/}
 			<ul className="hidden md:flex sticky top-0 h-screen flex-col justify-center">
 				<li><NavLink className={isCurrentTab} to='/'>About Me</NavLink></li>
 				{homeConfig.projects.map((p, id) =>
