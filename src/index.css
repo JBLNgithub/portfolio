@@ -50,6 +50,26 @@ br {
 	margin-bottom: 16px;
 }
 
+.external-button {
+	text-align: center;
+	display:block;
+	max-width: 300px;
+	color: var(--primary-bg-color);
+	background-color: #1d4ed8;
+	border-radius: 6px;
+	padding: 10px 16px;
+	margin: 16px auto 0;
+}
+
+.github-button {
+	background-color: var(--primary-color);
+}
+
+.external-button:hover {
+	color: var(--primary-color);
+	background-color: var(--hover-bg-color);
+}
+
 /*--- NAVBAR ---*/
 nav a {
 	border-radius: 16px;

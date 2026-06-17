@@ -30,12 +30,12 @@ export const portfolioConfig = {
 		{
 			label: "App",
 			ref: "https://portfolio.jbln.be",
-			isGithub: "false",
+			isGithub: false,
 		},
 		{
 			label: "github",
 			ref: "https://github.com/JBLNgithub/portfolio",
-			isGithub: "true",
+			isGithub: true,
 		},
 	],
 }
@@ -44,23 +44,23 @@ export const stockemoiseConfig = {
 	refs: [
 		{
 			label: "Webapp",
-			ref: "http://stockemoise.jbln.be",
-			isGithub: "false",
+			ref: "http://beta.stockemoise.be",
+			isGithub: false,
 		},
 		{
 			label: "Current website",
 			ref: "https://stockemoise.be/",
-			isGithub: "false",
+			isGithub: false,
 		},
 		{
 			label: "Frontend",
 			ref: "https://github.com/JBLNgithub/stockemoise",
-			isGithub: "true",
+			isGithub: true,
 		},
 		{
 			label: "Backend",
 			ref: "https://github.com/JBLNgithub/stockemoise-backend",
-			isGithub: "true",
+			isGithub: true,
 		},
 	],
 	stack: ["Tailwind", "Node.js", "Express", "Postgresql", "Figma", "Mermaid"],

@@ -83,6 +83,7 @@ const SkillTile = ({ name }) => {
 		<li className="bg-neutral-300 rounded-md text-center py-1">
 			{icon(name)}
 			{name}
+
 		</li>
 	);
 };
