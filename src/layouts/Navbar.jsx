@@ -30,7 +30,7 @@ export default function Navbar() {
 
 			{/*--- TABLETTE & DESKTOP NAVBAR ---*/}
 			<ul className="hidden md:flex sticky top-0 h-screen flex-col justify-center">
-				<li><NavLink className={isCurrentTab} to='/'>About Me</NavLink></li>
+				<li><NavLink className={isCurrentTab} to='/' onClick={topThePage}>About Me</NavLink></li>
 				{homeConfig.projects.map((p, id) =>
 					<li key={id}>
 						<NavLink to={p.link} className={isCurrentTab} onClick={topThePage}>{p.label}</NavLink>
